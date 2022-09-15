@@ -1,0 +1,63 @@
+// Import police
+@font-face
+  font-family: 'Inter'
+  src: url('./fonts/Inter-Regular.otf') format('opentype')
+  
+// Variables
+$font-family: 'Inter', Arial, sans-serif
+$base-color-1: #BB77F1
+    
+// Extends
+%margin-padding-0
+  margin: 0
+  padding: 0
+   
+// Style
+body, #root
+  width: 100%
+  min-height: 100vh
+  font-family: $font-family
+  @extend %margin-padding-0
+
+label, p, button, input, ::placeholder
+  font-family: $font-family
+
+label
+  color: white
+
+a
+  color: $base-color-1
+  text-decoration: none
+  font-size: 16px
+
+.MajGrand20
+  font-size: 20px
+
+.MajGrand24
+  font-size: 24px
+
+.MajGrand28
+  font-size: 28px
+
+p
+  font-size: 14px
+  color: $base-color-1
+
+button, input
+  font-size: 18px
+
+::placeholder, .placeholder_input
+  font-size: 16px
+
+ul
+  @extend %margin-padding-0
+
+.background
+  background-image: url('components/background.svg')
+  background-size: cover
+  width: 100%
+  height: 100vh
+
+.display_none
+  display: none
+
